@@ -44,12 +44,12 @@ public struct SecureStorage<T: ExpressibleByNilLiteral> {
         }
     }
     
-    /// The Initializer for `SecureStorage`
+    /// The Default Initializer for `SecureStorage`
     /// - Parameters:
     ///   - key: The key for the value in keychain
     ///   - keychain: The `KeychainSwift` being saved with
     ///   - access: Access controls for keychain
-    public init(
+    init(
         _ key: String,
         keychain: KeychainSwift = SecureStorageDefaults.keychain,
         withAccess access: KeychainSwiftAccessOptions? = SecureStorageDefaults.access
